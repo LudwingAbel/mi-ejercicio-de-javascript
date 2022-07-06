@@ -1,0 +1,117 @@
+body{
+  overflow: auto;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+}
+
+body > section{
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-stop: always;
+  scroll-snap-align: center;
+  /*flex-flow: column nowrap;*/
+}
+
+.section-one{
+  background-color: green;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items:center;
+}
+
+.section-two{
+  background-color: blue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items:center;
+}
+
+.section-three{
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items:center;
+}
+
+.section-four{
+  background-color: pink;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items:center;
+}
+
+.section-five{
+  background-color: gray;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items:center;
+}
+
+.mi-contenedor{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  align-items:center;
+}
+
+.column-text{
+  width: 50%;
+}
+
+column-image{
+  width: 50%;
+}
+
+.encabezado{
+  font-size: 45px;
+  color: white;
+}
+
+.parrafo{
+  font-size: 25px;
+  color: white;
+  text-align: justify;
+}
+
+.mi-imagen{
+  object-fit: contain;
+  width: 80%;
+  max-height: 300px; 
+  padding: 2rem;
+  transition: 1s;
+  display: inline-block;
+  opacity: 1;
+}
+
+.mi-modal{
+  display: none;
+  position: fixed;
+  z-index: 5;
+  background-color: purple;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.modalactivo{
+  display: block;
+}
+
+.title-modal{
+  font-size: 45px;
+  color: white;
+}
+
+.text-modal{
+  font-size: 25px;
+  color: white;
+  text-align: justify;
+}
